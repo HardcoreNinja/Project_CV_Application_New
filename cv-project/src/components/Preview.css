@@ -1,0 +1,120 @@
+/* p */
+@font-face {
+    font-family: 'latoThin';
+    src: url('../resources/Lato/Lato-Thin.ttf');
+}
+
+/* h2 */
+@font-face {
+    font-family: 'latoRegular';
+    src: url('../resources/Lato/Lato-Regular.ttf');
+}
+
+/* h1 */
+@font-face {
+    font-family: 'latoBold';
+    src: url('../resources/Lato/Lato-Bold.ttf');
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    /* Preferred icon size */
+    font-size: 100px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+#preview {
+    background: greenyellow;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 8fr;
+    grid-template-areas:
+        'header header'
+        'body personal'
+    ;
+    width: 8.5in;
+    height: 11in;
+    max-width: 8.5in;
+    max-height: 11in;
+}
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid black
+}
+
+#preview>img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+#header {
+    grid-area: header;
+    background: rgb(192, 194, 72);
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: center center;
+    place-items: flex-start center;
+    padding: 10px;
+    width: 100%;
+}
+
+#body {
+    grid-area: body;
+    background: rgb(24, 23, 23);
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: flex-start flex-start;
+    padding: 10px;
+    gap: 20px;
+}
+
+#body>label {
+    font-family: 'latoBold';
+}
+
+#personal {
+    grid-area: personal;
+    background: rgb(38, 38, 38);
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: center flex-start;
+    place-items: center flex-start;
+    font-family: 'latoRegular';
+}
+
+#personal>.material-symbols-outlined {
+    font-size: 100px;
+}
+
+#personal>#personalInfo>label {
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: flex-start flex-start;
+    place-items: flex-start flex-start;
+    font-family: 'latoRegular';
+}
+
+#personalInfo {
+    display: flex;
+    flex-flow: column wrap;
+    place-content: flex-start flex-start;
+    gap: 20px;
+}

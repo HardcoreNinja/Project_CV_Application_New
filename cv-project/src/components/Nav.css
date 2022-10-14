@@ -1,0 +1,7 @@
+#logo {
+    display: flex;
+    flex-flow: row wrap;
+    place-content: center center;
+    place-items: center center;
+    gap: 10px;
+}

@@ -1,0 +1,22 @@
+#workInfo {
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center flex-start;
+    place-items: center flex-start;
+    gap: 10px;
+    background: blue;
+    border-radius: 10px;
+    background: rgb(36, 41, 46);
+    padding: 10px;
+}
+
+#workInfo>h1 {
+    font-size: large;
+}
+
+#workInfo>label {
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center center;
+    text-align: center;
+}

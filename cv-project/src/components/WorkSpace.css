@@ -1,0 +1,48 @@
+#input {
+    grid-area: input;
+}
+
+#previewArea {
+    grid-area: previewArea;
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: flex-start flex-start;
+    place-items: flex-start flex-start;
+    max-width: 100vw;
+    overflow: scroll;
+}
+
+#item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'startDate companySchool'
+        'endDate majorPosition'
+    ;
+}
+
+#startDate {
+    grid-area: startDate;
+    font-size: small;
+}
+
+#companySchool {
+    grid-area: companySchool;
+    text-align: center;
+    font-family: 'latoBold';
+    font-size: smaller;
+
+}
+
+#endDate {
+    grid-area: endDate;
+    font-size: small;
+}
+
+#majorPosition {
+    grid-area: majorPosition;
+    text-align: center;
+    font-family: 'latoRegular';
+    font-size: small;
+}
