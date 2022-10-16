@@ -29,7 +29,7 @@ export default class Nav extends Component {
                     <span className="material-symbols-outlined">
                         contact_page
                     </span>
-                    <h1>CV Editor</h1>
+                    <h1>EZ Resume Editor</h1>
 
                 </div>
                 <button id='print' onClick={this.exportAsImage}>Print</button>
