@@ -19,3 +19,17 @@
     place-content: center center;
     text-align: center;
 }
+
+#contactInfo>label>input[type=file] {
+
+    font-size: 15px;
+    width: 200px;
+    height: 25px;
+    background-color: rgba(40, 40, 40, .9);
+    border: 1px solid rgba(214, 0, 107, 0.5);
+    box-shadow: 2px 2px 7px 4px rgba(214, 0, 107, 0.5);
+    border-radius: 0%;
+    transition: .5s;
+    text-align: center;
+    padding: 10px;
+}
