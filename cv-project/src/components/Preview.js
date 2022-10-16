@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import './Preview.css';
 
 export default class Preview extends Component {
+
+    getListItems = (array) => {
+        const listItems = array.map((number) =>
+            <li key={number.toString()}>
+                {number}
+            </li>
+        );
+
+        return listItems;
+    }
     render() {
         const {
             first,
@@ -39,14 +49,14 @@ export default class Preview extends Component {
                             Experience:
                             <hr />
                             <br />
-                            <p name='experience'>{work}</p>
+                            <ul name='experience'>{this.getListItems(work)}</ul>
                         </label>
 
                         <label htmlFor='education'>
                             Education:
                             <hr />
                             <br />
-                            <p name='education'>{education}</p>
+                            <ul name='education'>{this.getListItems(education)}</ul>
                         </label>
                     </div>
 
@@ -57,9 +67,11 @@ export default class Preview extends Component {
                             <hr />
                             <label htmlFor='address'>
                                 Address:
-                                <p name='address'>{street}</p>
-                                <p name='address'>{apt}</p>
-                                <p name='address'>{cityStateZip}</p>
+                                <ul>
+                                    <li name='address' key='street'>{street}</li >
+                                    <li name='address' key='apt'>{apt}</li >
+                                    <li name='address' key='cityStateZip'>{cityStateZip}</li>
+                                </ul>
                             </label>
 
                             <label htmlFor='email'>

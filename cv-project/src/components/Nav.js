@@ -26,7 +26,7 @@ export default class Nav extends Component {
         return (
             <nav id='nav'>
                 <div id='logo'>
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                         contact_page
                     </span>
                     <h1>CV Editor</h1>

@@ -88,6 +88,10 @@ button:active {
     background-color: rgb(44, 180, 213);
 }
 
+ul {
+    list-style-type: none;
+}
+
 .material-symbols-outlined {
     font-family: 'Material Symbols Outlined';
     font-weight: normal;
