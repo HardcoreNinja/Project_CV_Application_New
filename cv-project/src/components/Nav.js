@@ -30,8 +30,9 @@ export default class Nav extends Component {
                         contact_page
                     </span>
                     <h1>CV Editor</h1>
-                    <button onClick={this.exportAsImage}>Print</button>
+
                 </div>
+                <button id='print' onClick={this.exportAsImage}>Print</button>
             </nav>
         );
     }

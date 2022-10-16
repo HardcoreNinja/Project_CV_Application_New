@@ -1,3 +1,21 @@
+#nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'logo print';
+    max-width: 100vw;
+    background: rgb(18, 19, 21);
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#print {
+    grid-area: print;
+}
+
 #logo {
     display: flex;
     flex-flow: row wrap;
