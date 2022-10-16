@@ -8,6 +8,7 @@ export default class Preview extends Component {
             last,
             title,
             street,
+            photoURL,
             apt,
             cityStateZip,
             email,
@@ -50,10 +51,7 @@ export default class Preview extends Component {
                     </div>
 
                     <div id='personal'>
-                        <span class="material-symbols-outlined">
-                            account_circle
-                        </span>
-
+                        <img src={photoURL} />
 
                         <div id="personalInfo">
                             <hr />

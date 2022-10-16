@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './WorkSpace.css';
 import Input from './Input';
 import Preview from './Preview'
+import Image from '../resources/images/avatar.svg'
 
 export default class WorkSpace extends Component {
     constructor(props) {
@@ -12,6 +13,7 @@ export default class WorkSpace extends Component {
                 first: 'John',
                 last: 'Smith',
                 title: 'Project Manager',
+                photoURL: Image,
                 street: '5555 Madeup Lane',
                 apt: '#12',
                 cityStateZip: 'Boston, MA 02115',
@@ -40,6 +42,7 @@ export default class WorkSpace extends Component {
         first,
         last,
         title,
+        photoURL,
         street,
         apt,
         cityStateZip,
@@ -52,6 +55,7 @@ export default class WorkSpace extends Component {
                     first: first,
                     last: last,
                     title: title,
+                    photoURL: photoURL,
                     street: street,
                     apt: apt,
                     cityStateZip: cityStateZip,

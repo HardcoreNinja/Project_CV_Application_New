@@ -10,6 +10,7 @@ export default class ContactInfo extends Component {
             first: '',
             last: '',
             title: '',
+            photoURL: null,
             street: '',
             apt: '',
             cityStateZip: '',
@@ -40,6 +41,12 @@ export default class ContactInfo extends Component {
                 title: e.target.value,
             }
         )
+    }
+
+    setPhotoURL = (e) => {
+        this.setState({
+            photoURL: URL.createObjectURL(e.target.files[0]),
+        });
     }
 
     setStreet = (e) => {
@@ -96,6 +103,7 @@ export default class ContactInfo extends Component {
             this.state.first,
             this.state.last,
             this.state.title,
+            this.state.photoURL,
             this.state.street,
             this.state.apt,
             this.state.cityStateZip,
@@ -140,6 +148,17 @@ export default class ContactInfo extends Component {
                         onChange={this.setTitle}
                         placeholder='Project Manager'
                         value={this.state.title}
+                    />
+                </label>
+
+
+                <label htmlFor='photo' id='photo'>
+                    Select Photo:
+                    <input
+                        type="file"
+                        id="photo"
+                        name="photo"
+                        onChange={this.setPhotoURL}
                     />
                 </label>
 
